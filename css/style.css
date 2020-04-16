@@ -469,6 +469,7 @@ img {
     width: 45%;
     height: 50px;
     margin-bottom: 35px;
+    outline: none;
 }
 .form__input:focus{
     opacity: 0.6;
@@ -498,14 +499,17 @@ img {
     height: 50px;
     cursor: pointer;
     border: none;
-}
-.button:hover{
-    box-shadow: 4px 4px 9px  black;
-    transition: all 0.2s;
+    outline: none;
 }
 @media (max-width: 991px){
     .container{
         width: 750px;
+    }
+    .form__title{
+        padding-top: 100px;
+    }
+    .form__content{
+        padding-bottom: 100px;
     }
     .form__name{
         margin-right: 0;
@@ -542,8 +546,15 @@ img {
     .form__content{
         padding-bottom: 50px;
     }
-    .button:not(hover){
-        box-shadow: none !important;
+}
+@media (min-width: 769px){
+    .container{
+        width: 95%;
+    }
+    .button:hover{
+        box-shadow: 4px 4px 9px  black;
+        background: #D4C170;
+        transition: all 0.2s;
     }
 }
 @media (max-width: 580px){
