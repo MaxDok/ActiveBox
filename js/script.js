@@ -4,4 +4,6 @@ $(document).ready(function(){
     $('body').toggleClass('lock');
   });
 });
+
+new WOW().init();
   
