@@ -62,6 +62,9 @@ img {
     color: #FFFFFF;
     text-decoration: none;
 }
+.header__link:hover{
+    color: #D4C17F;
+}
 .header__burger{
     display: none;
 }
@@ -101,6 +104,10 @@ img {
     justify-content: center;
     margin-top: 200px;
     margin-bottom: 74px;
+}
+.header__info-loc{
+    display: flex;
+    align-items: center;
 }
 .img-loc{
     margin-right: 18px;
