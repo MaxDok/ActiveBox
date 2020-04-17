@@ -125,10 +125,10 @@
                     <div class="form__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </div>
                     <div class="form__social">
                         <form>
-                            <input type="name" class="form__input form__name" maxlength="20" required placeholder="Ваше имя">
-                            <input type="tel" class="form__input form__tel" maxlength="11" required placeholder="Ваш телефон"><br>
-                            <span class="form__inform">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
-                            <button class="button">Посмотреть район</button>
+                            <input type="name" class="form__input main__input form__name" maxlength="20" required placeholder="Ваше имя">
+                            <input type="tel" class="form__input main__input form__tel" maxlength="11" required placeholder="Ваш телефон"><br>
+                            <span class="form__inform inform">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
+                            <button class="button form__button">Посмотреть район</button>
                         </form>
                     </div>
                 </div>
@@ -137,7 +137,89 @@
         <!-- /.container -->
     </section>
     <!-- /.form -->
+
+    <section class="video">
+        <div class="container">
+            <iframe class="video" src="https://www.youtube-nocookie.com/embed/CWuT0XWanmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- ./video -->
+
+    <section class="map">
+        <div class="container">
+            <div class="map__block">
+                <h3 class="title map__title">Район на карте</h3>
+                <iframe class="map__content" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a5d5b4d9cdf2184ff88cdb2165a9ee359ce3ca227e7edb7bd66f973b14eb382&amp;source=constructor"  frameborder="0"></iframe>            </div>
+        </div>
+    </section>
+    <!-- ./MAP -->
     
+    <section class="questions">
+        <div class="container">
+            <div class="questions__block">
+                <h3 class="title question__title">Есть вопросы?</h3>
+                <div class="questions__social">
+                    <form class="question__social">
+                        <span class="question__inform">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
+                        <input type="name" class="question__input question__name" maxlength="20" required placeholder="Ваше имя">
+                        <input type="tel" class="question__input question__tel" maxlength="11" required placeholder="Ваш телефон">
+                        <button class="button question__button">Посмотреть район</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.questions -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__logo">
+                    <a class="footer__block-logo" href="#">HouseVOP</a>
+                    <span class="footer__block-subtitle">ЖИЛОЙ КОМПЛЕКС</span>
+                </div>
+                <div class="footer__menu">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="" class="footer__link">О комплексе</a> 
+                            <!-- /.footer__link -->
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Район</a>
+                            <!-- /.footer__link -->
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Каталог квартир</a>
+                             <!-- /.footer__link -->
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Ипотека</a> 
+                            <!-- /.footer__link -->
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Контакты</a> 
+                            <!-- /.footer__link -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__inform">
+                    <span class="footer__span">Адрес: Наб. реки Фонтанки 10-15</span>
+                    <span class="footer__span">Телефон: 8 (812) 123-45-67</span>
+                    <span class="footer__span">Отдел продаж: 10:00 - 20:00</span>
+                    <a href="#" class="footer__email">vip@housevip.ru</a>
+                    <div class="footer__img">
+                        <a href="#"><img src="img/youtube.svg" alt="youtube" class="footer__social"></a>
+                        <a href="#"><img src="img/vk.svg" alt="vk" class="footer__social"></a>
+                        <a href="#"><img src="img/facebook.svg" alt="facebook" class="footer__social"></a>
+                        <a href="#"><img src="img/instagram.svg" alt="instagram" class="footer__social"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
 
    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
    <script src="js/wow.min.js"></script>
