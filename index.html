@@ -25,23 +25,23 @@
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li>
-                            <a href="#" class="header__link">О комплексе</a> 
+                            <a href="#inform" class="header__link">О комплексе</a> 
                             <!-- /.header__link -->
                         </li>
                         <li>
-                            <a href="#" class="header__link">Район</a>
+                            <a href="#form" class="header__link">Район</a>
                              <!-- /.header__link -->
                         </li>
                         <li>
-                            <a href="#" class="header__link">Каталог квартир</a>
+                            <a href="#loft" class="header__link">Каталог квартир</a>
                              <!-- /.header__link -->
                         </li>
                         <li>
-                            <a href="#" class="header__link">Ипотека</a> 
+                            <a href="#questions" class="header__link">Ипотека</a> 
                             <!-- /.header__link -->
                         </li>
                         <li>
-                            <a href="#" class="header__link header__link-end">Контакты</a>
+                            <a href="#footer" class="header__link header__link-end">Контакты</a>
                              <!-- /.header__link -->
                         </li>
                     </ul>
@@ -65,7 +65,7 @@
     </header>
     <!-- ./header -->
 
-    <section class="inform">
+    <section id="inform" class="inform">
         <div class="container">
             <div class="inform__block">
                 <div class="inform__block-content wow fadeInUp" data-wow-delay="0s">
@@ -89,7 +89,8 @@
         <!-- ./container -->
     </section>
     <!-- ./inform -->
-    <section class="loft">
+
+    <section id="loft" class="loft">
         <div class="container">
             <div class="loft__block">
                 <h3 class="title loft__title">Наши квартиры</h3>
@@ -117,17 +118,17 @@
     </section>
     <!-- ./loft -->
 
-    <section class="form">
+    <section id="form" class="form">
         <div class="container">
             <div class="form__block">
                 <h3 class="title form__title">Хотите посмотреть?</h3>
                 <div class="form__content">
                     <div class="form__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </div>
                     <div class="form__social">
-                        <form>
-                            <input type="name" class="form__input main__input form__name" maxlength="20" required placeholder="Ваше имя">
-                            <input type="tel" class="form__input main__input form__tel" maxlength="11" required placeholder="Ваш телефон"><br>
-                            <span class="form__inform inform">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
+                        <form id="form__1">
+                            <input type="name" name="username" class="form__input main__input form__name" maxlength="20" required placeholder="Ваше имя">
+                            <input type="tel" name="phone" class="form__input main__input form__tel phone" required placeholder="Ваш телефон"><br>
+                            <span class="form__inform form__span">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
                             <button class="button form__button">Посмотреть район</button>
                         </form>
                     </div>
@@ -149,20 +150,21 @@
         <div class="container">
             <div class="map__block">
                 <h3 class="title map__title">Район на карте</h3>
-                <iframe class="map__content" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a5d5b4d9cdf2184ff88cdb2165a9ee359ce3ca227e7edb7bd66f973b14eb382&amp;source=constructor"  frameborder="0"></iframe>            </div>
+                <iframe class="map__content" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a5d5b4d9cdf2184ff88cdb2165a9ee359ce3ca227e7edb7bd66f973b14eb382&amp;source=constructor"  frameborder="0"></iframe>            
+            </div>
         </div>
     </section>
     <!-- ./MAP -->
     
-    <section class="questions">
+    <section id="questions" class="questions">
         <div class="container">
             <div class="questions__block">
                 <h3 class="title question__title">Есть вопросы?</h3>
                 <div class="questions__social">
-                    <form class="question__social">
+                    <form class="question__social" id="form__2">
                         <span class="question__inform">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
-                        <input type="name" class="question__input question__name" maxlength="20" required placeholder="Ваше имя">
-                        <input type="tel" class="question__input question__tel" maxlength="11" required placeholder="Ваш телефон">
+                        <input type="name" name="username" class="question__input question__name" maxlength="20" required placeholder="Ваше имя">
+                        <input type="tel" name="phone" class="question__input question__tel phone" required placeholder="Ваш телефон">
                         <button class="button question__button">Посмотреть район</button>
                     </form>
                 </div>
@@ -172,7 +174,7 @@
     </section>
     <!-- /.questions -->
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="container">
             <div class="footer__block">
                 <div class="footer__logo">
@@ -223,6 +225,8 @@
 
    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
    <script src="js/wow.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.maskedinput.min.js"></script>
    <script src="js/script.js"></script>
 </body>
 </html>

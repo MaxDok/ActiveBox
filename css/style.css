@@ -485,7 +485,7 @@ img {
 .form__inform{
     width: 45%;
 }
-.inform{
+.form__span{
     margin-right: 30px;
     text-align: center;
     color: #E7E7E7;

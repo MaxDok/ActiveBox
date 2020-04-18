@@ -5,5 +5,7 @@ $(document).ready(function(){
   });
 });
 
+$('.phone').mask('+7 (***) ***-**-**');
+
 new WOW().init();
   
